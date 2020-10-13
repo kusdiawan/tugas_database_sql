@@ -1,0 +1,25 @@
+CREATE DATABASE provinsi;
+DROP DATABASE provinsi;
+CREATE DATABASE indonesia;
+USE DATABASE indonesia;
+CREATE TABLE provinsi (id_provinsi INT, pulau VARCHAR(20), provinsi VARCHAR(30), singkatan VARCHAR(6), ibu_kota VARCHAR(20), diresmikan DATE, populasi INT, luas_total INT, populasi_luas INT, apbd DOUBLE, pdrb_2014 DOUBLE, pdrd_kapita DOUBLE, ipm DOUBLE);
+INSERT INTO provinsi VALUES ('1',
+                     'Papua',
+                     'Papua',
+                     'PA',
+                     'Jayapura',
+                     '1969-09-10',
+                     '3.091.047',
+                     '319.036,05',
+                     '10',
+                     '12.141,30',
+                     '123,18',
+                     '39,85',
+                     '56,75')
+SELECT * FROM provinsi;
+INSERT INTO `provinsi` (`id_provinsi`, `pulau`, `provinsi`, `singkatan`, `ibu_kota`, `diresmikan`, `populasi`, `luas_total`, `populasi_luas`, `apbd`, `pdrb_2014`, `pdrd_kapita`, `ipm`) 
+VALUES 
+('2', 'Papua', 'Papua Barat', 'PB', 'Manokwari', '1999-10-04', '849.809', '99.671,63', '7', '6.570,74', '58,29', '68,59', '61,28'), 
+('3', 'Sulawesi', 'Sulawesi Barat', 'SR', 'Mamuju', '2004-10-05', '1.258.090', '16.787,18', '75', '1.388,27', '29,39', '23,36', '62,24'),
+('4', 'Kepulauan Nusa Tenggara', 'Nusa Tenggara Timur', 'NT', 'Kupang', '1958-08-14', '5.036.897', '48.718,10', '106', '2.916,88', '68,6', '13,62', '62,26');
+SELECT * FROM provinsi;
